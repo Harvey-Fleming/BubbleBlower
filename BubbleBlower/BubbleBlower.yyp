@@ -34,7 +34,12 @@
   },
   "name":"BubbleBlower",
   "resources":[
+    {"id":{"name":"obj_blower","path":"objects/obj_blower/obj_blower.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_gamepad","path":"scripts/scr_gamepad/scr_gamepad.yy",},},
+    {"id":{"name":"spr_blower_placeholder","path":"sprites/spr_blower_placeholder/spr_blower_placeholder.yy",},},
+    {"id":{"name":"spr_player_placeholder","path":"sprites/spr_player_placeholder/spr_player_placeholder.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
   "resourceType":"GMProject",
