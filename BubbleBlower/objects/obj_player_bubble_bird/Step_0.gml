@@ -1,24 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @description Insert description here
+// You can write your code in this editor
+
 //var shoot_Key = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderr);
 var shoot_Key = mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderr);
 
-	var mousexDir =  x - obj_blower.x;
-	var mouseyDir =  y - obj_blower.y;
+if(shoot_Key)
+{
+	vSpeed += -shoot_Key * 10;
+}
 
-	len = sqrt(sqr(mousexDir) + sqr(mouseyDir));
-
-	newMousexDir = mousexDir / len;
-	newMouseyDir = mouseyDir / len;
-
-	if(shoot_Key)
-	{
-		vSpeed += newMouseyDir;
-		hSpeed += newMousexDir;
-	}
-
-//vSpeed += gravityScale;
+vSpeed += gravityScale;
 
 vSpeed = clamp(vSpeed, -vMaxSpeed, vMaxSpeed);
 hSpeed = clamp(hSpeed, -hMaxSpeed, hMaxSpeed);
@@ -26,25 +20,18 @@ hSpeed = clamp(hSpeed, -hMaxSpeed, hMaxSpeed);
 hSpeed = round(hSpeed);
 vSpeed = round(vSpeed);
 
-if(!place_meeting(x + hSpeed * blowPower, y, tilemap))
-{
-	x += hSpeed * blowPower;
-}
-else
-{
-	event_user(0);
-}
+//if(!place_meeting(x + hSpeed * blowPower, y, tilemap))
+//{
+//	x += hSpeed * blowPower;
+//}
 
+//if(!place_meeting(x, y + vSpeed * blowPower, tilemap))
+//{
+//	y += vSpeed * blowPower;
+//}
 
-if(!place_meeting(x, y + vSpeed * blowPower, tilemap))
-{
-	y += vSpeed * blowPower;
-}
-else
-{
-	event_user(0);
-}
-
+x += hSpeed * blowPower;
+y += vSpeed * blowPower;
 
 x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
@@ -66,5 +53,6 @@ else if(hSpeed < 0 && !shoot_Key)
 {
 	hSpeed += drag;	
 }
+
 
 
