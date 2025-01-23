@@ -13,9 +13,12 @@ hAcc = 0;
 vAcc = 0;
 additionalAcc = 0;
 
-gravityScale = 1;
+gravityScale = 2;
 
 blowPower = 0.5;
 gamepad = false;
 
 tilemap = layer_tilemap_get_id("Tiles_1");
+
+isBlowerGame = false;
+isBirdGame = false;

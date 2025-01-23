@@ -12,5 +12,6 @@ var inst2 = instance_create_layer(1400, centerpoint - random_range(600, 800), "i
 
 inst2.image_xscale = 4;
 inst2.image_yscale = -4;
+inst2.canScore = false;
 
 alarm_set(0, 180);

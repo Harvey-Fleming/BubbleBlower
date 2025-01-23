@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//var shoot_Key = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_shoulderr);
 var shoot_Key = mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderr);
 
+if(shoot_Key && isBlowerGame)
+{
 	var mousexDir =  x - obj_blower.x;
 	var mouseyDir =  y - obj_blower.y;
 
@@ -12,13 +13,16 @@ var shoot_Key = mouse_check_button(mb_left) || gamepad_button_check(0, gp_should
 	newMousexDir = mousexDir / len;
 	newMouseyDir = mouseyDir / len;
 
-	if(shoot_Key)
-	{
-		vSpeed += newMouseyDir;
-		hSpeed += newMousexDir;
-	}
+	vSpeed += newMouseyDir;
+	hSpeed += newMousexDir;
+}
+else if(shoot_Key && isBirdGame)
+{
+	vSpeed += -shoot_Key * 10;
+}
 
-//vSpeed += gravityScale;
+if(isBirdGame)
+	vSpeed += gravityScale;
 
 vSpeed = clamp(vSpeed, -vMaxSpeed, vMaxSpeed);
 hSpeed = clamp(hSpeed, -hMaxSpeed, hMaxSpeed);
