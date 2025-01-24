@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 score = 0;
+totalScoreNeeded = 0;
 
 function AddScore(score_to_add)
 {

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+isBlowerGame = false;
+isBirdGame = false;
+
 vSpeed = 0;
 hSpeed = 0;
 mass = 1;
@@ -20,5 +23,4 @@ gamepad = false;
 
 tilemap = layer_tilemap_get_id("Tiles_1");
 
-isBlowerGame = false;
-isBirdGame = false;
+
