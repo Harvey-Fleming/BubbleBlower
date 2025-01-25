@@ -10,6 +10,14 @@ else if(room == rm_Bubble_Bird_2)
 {
 	x -= 10;
 }
+else if(room == rm_Bubble_Bird_3)
+{
+	x -= 15;
+}
+else if(room == rm_Bubble_Bird_endless)
+{
+	x -= 5;
+}
 
 if(obj_player.x > x && !hasScored && canScore)
 {

@@ -18,6 +18,7 @@
     {"name":"inst_4DF7F3DA","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_622A2F30","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_7489F530","path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"inst_5496BEF1","path":"rooms/rm_menu/rm_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,6 +38,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":384.0,},
         {"$GMRInstance":"v1","%Name":"inst_622A2F30","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_622A2F30","objectId":{"name":"obj_input_checker","path":"objects/obj_input_checker/obj_input_checker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":32.0,},
         {"$GMRInstance":"v1","%Name":"inst_7489F530","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7489F530","objectId":{"name":"obj_button_level","path":"objects/obj_button_level/obj_button_level.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":256.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5496BEF1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5496BEF1","objectId":{"name":"obj_button_level","path":"objects/obj_button_level/obj_button_level.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":256.0,},
       ],"layers":[],"name":"Level_Instance_Layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_545D86B6","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_545D86B6","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"GameLogo","path":"sprites/GameLogo/GameLogo.yy",},"x":288.0,"y":0.0,},

@@ -21,7 +21,7 @@ if(room == rm_Bubble_Bird)
 	alarm_set(0, 180);
 
 }
-else if(room == rm_Bubble_Bird_2)
+else if(room == rm_Bubble_Bird_2 || room == rm_Bubble_Bird_3 || room == rm_Bubble_Bird_endless)
 {
 	alarm_set(0, 100);
 }
